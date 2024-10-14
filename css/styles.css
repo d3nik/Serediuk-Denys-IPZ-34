@@ -53,16 +53,6 @@ img {
     /* justify-content: space-between; */
 }
 
-.contacts {
-    display: flex;
-    margin-left: auto;
-    gap: 40px;
-}
-.contacts a{
-    text-decoration: none;
-    color: var(--contacts-color);
-}
-
 .nav-menu {
     margin-left: 93px;
 }
@@ -74,8 +64,23 @@ img {
     color: var(--global-text-color);
     text-decoration: none;
 }
-a:hover, 
-a:focus {
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+}
+.contacts a{
+    text-decoration: none;
+    color: var(--contacts-color);
+    fill: currentColor;
+    > svg {
+        margin-right: 10px;
+    }
+}
+
+.header a:hover, 
+.header a:focus {
     color: var(--general-blue-color);
 }
 
@@ -86,7 +91,10 @@ a:focus {
     color: var(--general-white-color);
 }
 .footer .container {
-    padding: 60px 0 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    gap: 70px;
 }
 .footer-contacts {
     margin-top: 28px;
@@ -105,15 +113,50 @@ a:focus {
     opacity: 60%;
 }
 
+.footer-right-side h3 {
+    margin: 12px 0 20px 0;
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+.footer-social-link-list {
+    display: flex;
+    gap: 10px;
+
+    > li {
+        height: 44px;
+        width: 44px;
+    }
+}
+.footer-social-link-icon{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 100%;
+
+    fill: var(--general-white-color);
+}
+.footer-social-link-icon:hover,
+.footer-social-link-icon:focus {
+    background: var(--general-blue-color);
+}
+
 /* Main-page intro */
 
 .intro {
-    background-color: var(--grey-block-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/introBackgroundImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     text-align: center;
 }
 .intro .container {
-    padding: 200px 0 200px 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .intro h1 {
     text-transform: uppercase;
@@ -167,6 +210,12 @@ a:focus {
     line-height: 1.71;
     color: var(--described-text-color);
 }
+.features-icon{
+    padding: 25px 100px 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: var(--block-color);
+}
 
 /* Main-page occupation */
 
@@ -191,7 +240,8 @@ a:focus {
     background-color: var(--block-color);
 }
 .team .container {
-    padding: 94px 0 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
     text-align: center;
 }
 .cards-list {
@@ -205,6 +255,8 @@ a:focus {
     border-radius: 0px 0px 4px 4px;
     background-color: var(--general-white-color);
     padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
     > img {
         margin-bottom: 30px;
     }
@@ -220,12 +272,73 @@ a:focus {
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.17;
+    margin-bottom: 16px;
     color: var(--described-text-color);
+}
+.team-social-link-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    > li {
+        height: 44px;
+        width: 44px;
+    }
+}
+.team-social-link-icon {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 100%;
+
+    color: rgba(175, 177, 184, 1);
+    fill: currentColor;
+}
+.team-social-link-icon:hover,
+.team-social-link-icon:focus {
+    color: var(--general-white-color);
+    background: var(--general-blue-color);
+}
+
+/* Main page regular-clients */
+
+.regular-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.regular-clients .container {
+    text-align: center;
+}
+.regular-clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.regular-clients-link-icon {
+    margin: 0;
+    padding: 16px 32px 16px 32px;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+
+    color: rgba(175, 177, 184, 1);
+    fill: currentColor;
+}
+.regular-clients-link-icon:hover,
+.regular-clients-link-icon:focus {
+    fill: var(--general-blue-color);
+    border-color: var(--general-blue-color);
 }
 
 /* projects + filters */
-.projects {
-    padding: 94px 0 94px 0;
+.projects{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .filters {
     display: flex;
@@ -249,6 +362,7 @@ a:focus {
 .filters button:focus {
     color: var(--general-white-color);
     background-color: var(--general-blue-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio {
@@ -270,6 +384,10 @@ a:focus {
     > figcaption{
         padding-left: 24px;
     }
+}
+.portfolio .card:hover,
+.porfoli .card:focus{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .portfolio .card h3 {
     font-size: 18px;

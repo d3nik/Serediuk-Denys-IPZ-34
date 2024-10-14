@@ -92,8 +92,12 @@ a:focus {
     margin-top: 28px;
     font-style: normal;
 }
-.footer-contacts ul li{
-    margin-top: 12px;
+.city-address {
+    display: block;
+    margin-bottom: 12px;
+}
+.footer-contacts ul li:not(:last-child){
+    margin-bottom: 12px;
 }
 .footer-contacts a {
     text-decoration: none;
@@ -192,7 +196,8 @@ a:focus {
 }
 .cards-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
 }
 .cards-list .card {
     line-height: 1.17;

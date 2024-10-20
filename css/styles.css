@@ -412,3 +412,16 @@ img {
     line-height: 1.875;
     color: var(--described-text-color);
 }
+
+/* Modal-window */
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+}

@@ -75,7 +75,7 @@ img {
     display: block;
     width: 100%;
     height: 4px;
-    margin-top: 28px;
+    margin-top: 29px;
     border-radius: 2px;
     background-color: var(--general-blue-color);
 }
@@ -129,6 +129,10 @@ img {
     text-decoration: none;
     color: var(--general-white-color);
     opacity: 60%;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    color: var(--general-blue-color);
 }
 
 .footer-right-side {
@@ -476,10 +480,8 @@ img {
     
     > .overlay-text {
         color: var(--general-white-color);
-        max-width: 322px;
-        padding-top: 63px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 63px 24px;
+        min-width: 322px;
         font-size: 18px;
         font-weight: 400;
         line-height: 1.56;
@@ -536,11 +538,17 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--general-white-color);
+    color: rgba(0, 0, 0, 1);
     cursor: pointer;
+}
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--general-blue-color);
+    color: var(--general-white-color);
 }
 
 .modal-icon {
     width: 18px;
     height: 18px;
-    fill: rgba(0, 0, 0, 1);
+    fill: currentColor;
 }

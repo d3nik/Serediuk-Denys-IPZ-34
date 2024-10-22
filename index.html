@@ -22,9 +22,9 @@
 
         <nav class="nav-menu">
           <ul>
-            <li><a href="index.html">Студія</a></li>
-            <li><a href="portfolio.html">Портфоліо</a></li>
-            <li><a href="#">Контакти</a></li>
+            <li><a href="index.html" class="nav-menu-link active">Студія</a></li>
+            <li><a href="portfolio.html" class="nav-menu-link">Портфоліо</a></li>
+            <li><a href="#" class="nav-menu-link">Контакти</a></li>
           </ul>
         </nav>
 
@@ -50,7 +50,7 @@
       <section class="intro">
         <div class="container">
           <h1>Ефективні рішення для вашого бізнесу</h1>
-          <button type="button">Замовити послугу</button>
+          <button type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -114,30 +114,39 @@
       <section class="occupation">
         <div class="container">
           <h2 class="caption">Чим ми займаємось</h2>
-          <ul>
-            <li>
+          <ul class="occupation-list">
+            <li class="occupation-list-item">
               <img
                 src="images/working_space_1.jpg"
                 alt="back-end розробка"
                 width="370"
                 height="294"
               />
+              <div class="occupation-list-box">
+                <p class="occupation-list-text">Десктопні додатки</p>
+              </div>
             </li>
-            <li>
+            <li class="occupation-list-item">
               <img
                 src="images/working_space_2.jpg"
                 alt="mobile розробка"
                 width="370"
                 height="294"
               />
+              <div class="occupation-list-box">
+                <p class="occupation-list-text">Мобільні додатки</p>
+              </div>
             </li>
-            <li>
+            <li class="occupation-list-item">
               <img
                 src="images/working_space_3.jpg"
                 alt="front-end розробка"
                 width="370"
                 height="294"
               />
+              <div class="occupation-list-box">
+                <p class="occupation-list-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -452,5 +461,17 @@
         </div>
       </div>
     </footer>
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-button" data-modal-close>
+            <svg class="modal-icon">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

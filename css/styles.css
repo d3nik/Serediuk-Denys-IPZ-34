@@ -729,12 +729,12 @@ img {
     width: 100%;
 }
 
-/* хз як свг спрайт поставити (звичайні фоткі ставляться, а свгшка не канає) */
+/* хз як свг спрайт поставити (звичайні фоткі ставляться, а свгшка не канає) */ 
 .modal-checkbox:checked + .custom-checkbox {
     position: absolute;
     cursor: pointer;
     border: none;
-    content: url(../images/Ihor.jpg);
+    background-color: var(--general-blue-color);
 }
 
 .modal-checkbox-text {

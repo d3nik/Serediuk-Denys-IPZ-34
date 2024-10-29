@@ -709,6 +709,8 @@ img {
     position: relative;
     cursor: pointer;
     color: var(--general-white-color);
+    border: 2px solid var(--global-text-color);
+    border-radius: 2px;
     height: 15px;
     width: 16px;
 }
@@ -722,19 +724,24 @@ img {
 .custom-checkbox {
     position: absolute;
     left: 0;
-    border: 2px solid var(--global-text-color);
-    border-radius: 2px;
     background-color: transparent;
     height: 100%;
     width: 100%;
 }
 
-/* хз як свг спрайт поставити (звичайні фоткі ставляться, а свгшка не канає) */ 
-.modal-checkbox:checked + .custom-checkbox {
-    position: absolute;
+.modal-checkbox:checked + .custom-checkbox::before {
     cursor: pointer;
-    border: none;
+    position: absolute;
+    text-align: center;
+    font-size: 13px;
+    content: "✔";
     background-color: var(--general-blue-color);
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+}
+.modal-checkbox-label:has(.modal-checkbox:checked) {
+    border: none;
 }
 
 .modal-checkbox-text {

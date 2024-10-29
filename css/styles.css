@@ -112,7 +112,7 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
-    gap: 70px;
+    gap: 94px;
 }
 .footer-contacts {
     margin-top: 28px;
@@ -129,16 +129,17 @@ img {
     text-decoration: none;
     color: var(--general-white-color);
     opacity: 60%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts a:hover,
 .footer-contacts a:focus {
     color: var(--general-blue-color);
 }
 
-.footer-right-side {
+.footer-central {
     padding-top: 12px;
 }
-.footer-right-side h3 {
+.footer-central h3 {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.17;
@@ -170,6 +171,67 @@ img {
 .footer-social-link-icon:hover,
 .footer-social-link-icon:focus {
     background: var(--general-blue-color);
+}
+
+.footer-right-side {
+    flex-grow: 1;
+    padding-top: 12px;
+}
+.footer-right-side h3 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.email-form {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+.email-msg-label {
+    max-width: 358px;
+    flex-grow: 1;
+}
+.email-msg-label .is-hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+#email-msg {
+    width: 100%;
+    background-color: var(--grey-block-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 16px 16px 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-msg-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    padding: 10px 28px;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--general-blue-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--general-white-color);
+}
+.email-msg-btn-icon {
+    fill: currentColor;
 }
 
 /* Main-page intro */
@@ -516,10 +578,11 @@ img {
 
 .modal {
     position: absolute;
+    padding: 40px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
+    max-width: 528px;
     min-height: 581px;
     border-radius: 4px;
     background-color: var(--general-white-color);
@@ -540,6 +603,7 @@ img {
     background-color: var(--general-white-color);
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -548,7 +612,182 @@ img {
 }
 
 .modal-icon {
-    width: 18px;
-    height: 18px;
     fill: currentColor;
+}
+
+.modal-caption {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.44px;
+    letter-spacing: 0.03em;
+    width: 448px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--global-text-color);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.modal-label:not(:first-child) {
+    margin-top: 10px;
+}
+
+.modal-label-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 4px;
+    color: var(--contacts-color);
+}
+.modal-label-link {
+    font-family: "Roboto", sans-serif;
+    color: var(--general-blue-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.modal-input {
+    padding: 11px 12px 11px 42px;
+    font-size: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    border-radius: 4px;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-label-icon {
+    position: absolute;
+    bottom: 12px;
+    left: 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-text-area {
+    resize: none;
+    height: 120px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px #21212133 solid;
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    padding: 11px 12px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus, .modal-text-area:focus {
+    border: 1px solid var(--general-blue-color);
+}
+.modal-input:focus + .modal-label-icon {
+    fill: var(--general-blue-color);
+}
+
+.modal-form-checkbox-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 30px;
+    color: var(--global-text-color);
+    user-select: none;
+}
+
+.modal-checkbox-label {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    gap: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--global-text-color);
+}
+.modal-checkbox {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    height: 15px;
+    width: 16px;
+}
+.custom-checkbox {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--global-text-color);
+    border-radius: 2px;
+    color: var(--general-white-color);
+    height: 15px;
+    width: 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox::before {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox:checked + .custom-checkbox::before {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    font-size: 13px;
+    content: "✔";
+    background-color: var(--general-blue-color);
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+}
+.modal-checkbox:checked + .custom-checkbox{
+    border: none;
+}
+
+.modal-checkbox-text {
+    font-family: "Roboto", sans-serif;
+    color: rgba(117, 117, 117, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.modal-form-submit-box {
+    text-align: center;
+}
+.modal-form-submit {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 10px 52px 10px 52px;
+    border: none;
+    border-radius: 4px;
+    color: var(--general-white-color);
+    background-color: var(--general-blue-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+    background-color: rgba(24, 140, 232, 1);
 }

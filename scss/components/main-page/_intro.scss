@@ -1,5 +1,4 @@
 .intro {
-    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/introBackgroundImage.jpg);
     background-size: cover;
     background-position: center;
@@ -8,6 +7,11 @@
     margin-right: auto;
     display: flex;
     text-align: center;
+
+    @include tablet {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
 
     .container {
         padding-top: 200px;

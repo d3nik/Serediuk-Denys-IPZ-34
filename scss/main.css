@@ -18,11 +18,25 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .container {
+    max-width: 478px;
+  }
 }
 
 .header {
@@ -222,7 +236,6 @@ img {
 }
 
 .intro {
-  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/introBackgroundImage.jpg);
   background-size: cover;
   background-position: center;
@@ -231,6 +244,12 @@ img {
   margin-right: auto;
   display: flex;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .intro {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 .intro .container {
   padding-top: 200px;
@@ -268,9 +287,27 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .features .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .features .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .features .container ul {
   display: flex;
   gap: 30px;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .features .container ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .features h3 {
   font-size: 14px;
@@ -291,7 +328,22 @@ img {
   border-radius: 4px;
   background: #F5F4FA;
 }
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .features .features-icon {
+    padding: 25px 142px 25px 142px;
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .occupation {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .occupation {
+    display: none;
+  }
+}
 .occupation .container {
   text-align: center;
   padding-bottom: 94px;
@@ -329,11 +381,22 @@ img {
   padding-bottom: 94px;
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .team .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .cards-list {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .cards-list {
+    flex-wrap: wrap;
+  }
 }
 .cards-list .card {
   line-height: 1.17;
@@ -386,18 +449,27 @@ img {
   background: #2196F3;
 }
 
-.regular-clients {
+.regular-clients .container {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.regular-clients .container {
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .regular-clients .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .regular-clients .regular-clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .regular-clients .regular-clients-list {
+    flex-wrap: wrap;
+  }
 }
 .regular-clients .regular-clients-link-icon {
   margin: 0;
@@ -409,6 +481,11 @@ img {
   color: rgb(175, 177, 184);
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .regular-clients .regular-clients-link-icon {
+    padding: 16px 59px 16px 59px;
+  }
 }
 .regular-clients .regular-clients-link-icon:hover, .regular-clients .regular-clients-link-icon:focus {
   color: #2196F3;
@@ -439,12 +516,15 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 528px;
-  min-height: 581px;
   border-radius: 4px;
   background-color: #FFFFFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition-duration: 300ms;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 
 .modal-close-button {
@@ -480,6 +560,11 @@ img {
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .modal-caption {
+    max-width: 370px;
+  }
 }
 
 .modal-form {
@@ -517,6 +602,11 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .modal-form .form-label-link {
+    font-size: 12px;
+  }
 }
 .modal-form .form-input {
   padding: 11px 12px 11px 42px;
@@ -618,6 +708,11 @@ img {
   letter-spacing: 0.03em;
   text-align: left;
 }
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .modal-form .form-checkbox-text {
+    font-size: 12px;
+  }
+}
 .modal-form .modal-form-submit-box {
   text-align: center;
 }
@@ -643,6 +738,12 @@ img {
 .projects {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .projects-filters {
@@ -684,6 +785,11 @@ img {
   background-color: #FFFFFF;
   padding-bottom: 20px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .projects-portfolio-list .card {
+    max-width: 354px;
+  }
 }
 .projects-portfolio-list .card figcaption {
   padding-left: 24px;

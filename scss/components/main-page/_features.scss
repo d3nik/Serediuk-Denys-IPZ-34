@@ -3,9 +3,25 @@
     .container {
     padding-top: 94px;
     padding-bottom: 94px;
+    
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
         ul {  
             display: flex;
             gap: 30px;
+
+            @include tablet {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     }
     
@@ -29,5 +45,9 @@
         margin-bottom: 30px;
         border-radius: 4px;
         background: $block-color;
+
+        @include tablet {
+            padding: 25px 142px 25px 142px;
+        }
     }
 }

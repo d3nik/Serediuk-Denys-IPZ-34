@@ -5,6 +5,11 @@
         padding-top: 94px;
         padding-bottom: 94px;
         text-align: center;
+        
+        @include tablet {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
     }
 }
 
@@ -12,6 +17,10 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    
+    @include tablet {
+        flex-wrap: wrap;
+    }
 
     .card {
         line-height: 1.17;

@@ -21,13 +21,13 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 1.71;
-        color: var(--described-text-color);
+        color: $described-text-color;
     }
 
     .features-icon{
         padding: 25px 100px 25px 100px;
         margin-bottom: 30px;
         border-radius: 4px;
-        background: var(--block-color);
+        background: $block-color;
     }
 }

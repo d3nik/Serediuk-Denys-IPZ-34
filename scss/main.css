@@ -51,6 +51,9 @@ img {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header .navigation-menu-link:hover, .header .navigation-menu-link:focus {
+  color: #2196F3;
+}
 .header .navigation-menu-link.active {
   position: relative;
   color: #2196F3;
@@ -211,6 +214,13 @@ img {
   color: #2196F3;
 }
 
+.caption {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+
 .intro {
   max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/introBackgroundImage.jpg);
@@ -273,24 +283,18 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  color: var(--described-text-color);
+  color: #757575;
 }
 .features .features-icon {
   padding: 25px 100px 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background: var(--block-color);
+  background: #F5F4FA;
 }
 
 .occupation .container {
   text-align: center;
   padding-bottom: 94px;
-}
-.occupation .caption {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
-  margin-bottom: 50px;
 }
 .occupation .occupation-list {
   display: flex;

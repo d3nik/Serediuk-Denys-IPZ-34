@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./scss/main.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -17,15 +17,15 @@
           <use href="./images/icons/icons.svg#icon-WebStudio-dark"></use>
         </svg>
 
-        <nav class="nav-menu">
+        <nav class="header-navigation-menu nav-menu">
           <ul>
-            <li><a href="index.html" class="nav-menu-link">Студія</a></li>
-            <li><a href="portfolio.html" class="nav-menu-link active">Портфоліо</a></li>
-            <li><a href="#" class="nav-menu-link">Контакти</a></li>
+            <li><a href="index.html" class="navigation-menu-link">Студія</a></li>
+            <li><a href="portfolio.html" class="navigation-menu-link active">Портфоліо</a></li>
+            <li><a href="#" class="navigation-menu-link">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="contacts">
+        <ul class="header-contacts">
           <li>
             <a href="mailto:info@devstudio.com">
               <svg width="16" height="12">
@@ -46,7 +46,7 @@
     <main>    
           <section class="projects">
             <div class="container">
-              <ul class="filters">
+              <ul class="projects-filters">
                   <li><button type="button">Усі</button></li>
                   <li><button type="button">Веб-сайти</button></li>
                   <li><button type="button">Додатки</button></li>
@@ -55,7 +55,7 @@
               </ul>
               
 
-              <ul class="portfolio">
+              <ul class="projects-portfolio-list">
                 <li>
                   <figure class="card">
                       <div class="card-box">
@@ -79,11 +79,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Постер New Orlean vs Golden Star</h3>
-                        <p class="card-text">Дизайн</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Постер New Orlean vs Golden Star</h3>
+                      <p class="card-text">Дизайн</p>
+                    </figcaption>
+                  </figure>
                 </li>
                 
                 <li>
@@ -94,11 +94,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Ресторан Seafood</h3>
-                        <p class="card-text">Додаток</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Ресторан Seafood</h3>
+                      <p class="card-text">Додаток</p>
+                    </figcaption>
+                  </figure>
                 </li>
                 
                 <li>
@@ -109,11 +109,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Проєкт Prime</h3>
-                        <p class="card-text">Маркетинг</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Проєкт Prime</h3>
+                      <p class="card-text">Маркетинг</p>
+                    </figcaption>
+                  </figure>
                 </li>
                 
                 <li>
@@ -124,11 +124,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Проєкт Boxes</h3>
-                        <p class="card-text">Додаток</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Проєкт Boxes</h3>
+                      <p class="card-text">Додаток</p>
+                    </figcaption>
+                  </figure>
                 </li>
 
                 <li>
@@ -139,11 +139,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Inspiration has no Borders</h3>
-                        <p class="card-text">Веб-сайт</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Inspiration has no Borders</h3>
+                      <p class="card-text">Веб-сайт</p>
+                    </figcaption>
+                  </figure>
                 </li>
                 
                 <li>
@@ -158,7 +158,7 @@
                       <h3>Видання Limited Edition</h3>
                       <p class="card-text">Дизайн</p>
                     </figcaption>
-                    </figure>
+                  </figure>
                 </li>
                 
                 <li>
@@ -169,11 +169,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Проєкт LAB</h3>
-                        <p class="card-text">Маркетинг</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Проєкт LAB</h3>
+                      <p class="card-text">Маркетинг</p>
+                    </figcaption>
+                  </figure>
                 </li>
                 
                 <li>
@@ -184,11 +184,11 @@
                         <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                       </div>
                     </div>
-                      <figcaption>
-                        <h3>Growing Business</h3>
-                        <p class="card-text">Додаток</p>
-                      </figcaption>
-                    </figure>
+                    <figcaption>
+                      <h3>Growing Business</h3>
+                      <p class="card-text">Додаток</p>
+                    </figcaption>
+                  </figure>
                 </li>
               </ul>
             </div>
@@ -203,7 +203,7 @@
           </svg>
 
           <address class="footer-contacts">
-            <span class="city-address">м. Київ, пр-т Лесі Українки, 26</span>
+            <span class="contacts-city-address">м. Київ, пр-т Лесі Українки, 26</span>
             <ul>
               <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
               <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -250,13 +250,13 @@
 
         <div class="footer-right-side">
           <h3>Підпишіться на розсилку</h3>
-          <form class="email-form">
-            <label class="email-msg-label">
+          <form class="footer-email-form">
+            <label class="email-form-label">
               <span class="is-hidden">Email</span>
-              <input name="email-msg" type="email" placeholder="Email" id="email-msg" required>
+              <input name="email-message" type="email" placeholder="Email" id="email-form-input" required>
             </label>
-            <button type="submit" class="email-msg-btn">Підписатися
-            <svg width="24" height="24" class="email-msg-btn-icon">
+            <button type="submit" class="email-form-button">Підписатися
+            <svg width="24" height="24" class="email-form-button-icon">
               <use href="./images/icons/icons.svg#icon-telegram"></use>
             </svg>
             </button>

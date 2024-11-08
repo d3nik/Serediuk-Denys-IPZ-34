@@ -8,14 +8,14 @@
     display: flex;
     text-align: center;
 
-    @include tablet {
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
-
     .container {
         padding-top: 200px;
         padding-bottom: 200px;
+
+        @include tablet {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     }
 
     h1 {
@@ -27,6 +27,13 @@
         font-weight: 900;
         letter-spacing: 0.06em;
         color: $general-white-color;
+
+        @include tablet {
+            max-width: 360px;
+            font-size: 26px;
+            line-height: 1.61;
+            letter-spacing: 0.06em;
+        }
     }
 
     button {

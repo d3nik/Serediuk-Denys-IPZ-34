@@ -59,9 +59,17 @@ img {
     padding-bottom: 20px;
   }
 }
-.header .header-logo {
-  width: 134px;
-  height: 28px;
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .header .header-logo {
+    width: 134px;
+    height: 28px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .header .header-logo {
+    width: 134px;
+    height: 28px;
+  }
 }
 .header .header-navigation-menu {
   margin-left: 93px;
@@ -147,13 +155,34 @@ img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199.9px) {
   .footer .footer-left-side {
     text-align: center;
   }
 }
-.footer .footer-logo {
-  height: 28px;
+@media screen and (max-width: 767.9px) {
+  .footer .footer-left-side {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.9px) {
+  .footer .footer-logo {
+    width: 134px;
+    height: 28px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .footer .footer-logo {
+    width: 134px;
+    height: 28px;
+  }
 }
 .footer .footer-contacts {
   margin-top: 28px;
@@ -187,6 +216,11 @@ img {
   text-transform: uppercase;
 }
 @media (min-width: 768px) and (max-width: 1199.9px) {
+  .footer .footer-central h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767.9px) {
   .footer .footer-central h3 {
     text-align: center;
   }
@@ -231,6 +265,11 @@ img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .footer .footer-right-side {
+    text-align: center;
+  }
+}
 .footer .footer-email-form {
   display: flex;
   gap: 12px;
@@ -241,11 +280,21 @@ img {
     align-items: center;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .footer .footer-email-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer .email-form-label {
-  width: 358px;
   flex-grow: 1;
 }
 @media (min-width: 768px) and (max-width: 1199.9px) {
+  .footer .email-form-label {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 767.9px) {
   .footer .email-form-label {
     width: 450px;
   }
@@ -315,6 +364,12 @@ img {
     padding-bottom: 120px;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .intro .container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 .intro h1 {
   text-transform: uppercase;
   max-width: 696px;
@@ -326,6 +381,14 @@ img {
   color: #FFFFFF;
 }
 @media (min-width: 768px) and (max-width: 1199.9px) {
+  .intro h1 {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (max-width: 767.9px) {
   .intro h1 {
     max-width: 360px;
     font-size: 26px;
@@ -361,7 +424,7 @@ img {
     padding-bottom: 60px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199.9px) {
+@media screen and (max-width: 767.9px) {
   .features .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -377,11 +440,22 @@ img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .features .container ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .features h3 {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767.9px) {
+  .features h3 {
+    text-align: center;
+  }
 }
 .features p {
   max-width: 270px;
@@ -389,6 +463,12 @@ img {
   font-weight: 400;
   line-height: 1.71;
   color: #757575;
+}
+@media screen and (max-width: 767.9px) {
+  .features p {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 .features .features-icon {
   padding: 25px 100px 25px 100px;
@@ -399,6 +479,11 @@ img {
 @media (min-width: 768px) and (max-width: 1199.9px) {
   .features .features-icon {
     padding: 25px 142px 25px 142px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .features .features-icon {
+    padding: 25px 190px 25px 190px;
   }
 }
 
@@ -455,6 +540,12 @@ img {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .team .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .cards-list {
   display: flex;
@@ -462,6 +553,11 @@ img {
   gap: 30px;
 }
 @media (min-width: 768px) and (max-width: 1199.9px) {
+  .cards-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767.9px) {
   .cards-list {
     flex-wrap: wrap;
   }
@@ -476,6 +572,12 @@ img {
 }
 .cards-list .card img {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767.9px) {
+  .cards-list .card img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .cards-list .card h3 {
   font-size: 16px;
@@ -528,6 +630,12 @@ img {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .regular-clients .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .regular-clients .regular-clients-list {
   display: flex;
   justify-content: center;
@@ -535,6 +643,11 @@ img {
   gap: 30px;
 }
 @media (min-width: 768px) and (max-width: 1199.9px) {
+  .regular-clients .regular-clients-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767.9px) {
   .regular-clients .regular-clients-list {
     flex-wrap: wrap;
   }
@@ -553,6 +666,11 @@ img {
 @media (min-width: 768px) and (max-width: 1199.9px) {
   .regular-clients .regular-clients-link-icon {
     padding: 16px 59px 16px 59px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .regular-clients .regular-clients-link-icon {
+    padding: 16px 50px 16px 50px;
   }
 }
 .regular-clients .regular-clients-link-icon:hover, .regular-clients .regular-clients-link-icon:focus {
@@ -813,6 +931,12 @@ img {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 767.9px) {
+  .projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .projects-filters {
   display: flex;
@@ -820,12 +944,21 @@ img {
   gap: 8px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767.9px) {
+  .projects-filters {
+    justify-content: start;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+}
 .projects-filters button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
@@ -844,6 +977,13 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 767.9px) {
+  .projects-portfolio-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
 .projects-portfolio-list .card {
   max-width: 370px;
   text-align: start;
@@ -857,6 +997,11 @@ img {
 @media (min-width: 768px) and (max-width: 1199.9px) {
   .projects-portfolio-list .card {
     max-width: 354px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .projects-portfolio-list .card {
+    max-width: 450px;
   }
 }
 .projects-portfolio-list .card figcaption {

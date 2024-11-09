@@ -19,8 +19,15 @@
     }
 
     .header-logo {
-        width: 134px;
-        height: 28px;
+        @include tablet {
+            width: 134px;
+            height: 28px;
+        }
+        
+        @include mobile {
+            width: 134px;
+            height: 28px;
+        }
     }
 
     .header-navigation-menu {
@@ -29,7 +36,7 @@
         @include tablet {
             margin-left: 88px;
         }
-    
+
         ul{
             display: flex;
             gap: 50px;

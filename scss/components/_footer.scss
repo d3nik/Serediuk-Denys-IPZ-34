@@ -14,16 +14,34 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+        }
     }
 
     .footer-left-side {    
         @include tablet {
             text-align: center;
         }
+
+        @include mobile {
+            text-align: center;
+        }
     }
     
     .footer-logo {
-        height: 28px;
+        @include tablet {   
+            width: 134px;
+            height: 28px;
+        }
+
+        @include mobile {  
+            width: 134px;
+            height: 28px;
+        }
     }
 
     .footer-contacts {
@@ -63,6 +81,10 @@
             text-transform: uppercase;   
 
             @include tablet {
+                text-align: center;
+            }
+
+            @include mobile {
                 text-align: center;
             }
         }
@@ -110,21 +132,33 @@
             text-align: center;
             justify-content: center;
         }
+
+        @include mobile {
+            text-align: center;
+        }
     }
     .footer-email-form {
         display: flex;
         gap: 12px;
 
-        @include tablet{
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mobile {
             flex-direction: column;
             align-items: center;
         }
     }
     .email-form-label {
-        width: 358px;
         flex-grow: 1;
     
         @include tablet {
+            width: 450px;
+        }
+
+        @include mobile {
             width: 450px;
         }
 

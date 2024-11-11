@@ -60,11 +60,12 @@
         background: $block-color;
 
         @include tablet {
-            padding: 25px 142px 25px 142px;
+            padding: auto;
         }
 
         @include mobile {
-            padding: 25px 190px 25px 190px;
+            display: flex;
+            justify-content: center;
         }
     }
 }

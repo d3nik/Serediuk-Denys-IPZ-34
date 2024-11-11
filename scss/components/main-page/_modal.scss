@@ -1,5 +1,6 @@
 .backdrop{
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,6 +31,11 @@
     transition-duration: 300ms;
 
     @include tablet {
+        max-width: 450px;
+    }
+
+    @include mobile {
+        margin: auto;
         max-width: 450px;
     }
 }
@@ -67,12 +73,16 @@
     font-weight: 700;
     line-height: 23.44px;
     letter-spacing: 0.03em;
-    width: 448px;
+    max-width: 448px;
     text-align: center;
     margin-bottom: 12px;
     color: $global-text-color;
 
     @include tablet {
+        max-width: 370px;
+    }
+
+    @include mobile {
         max-width: 370px;
     }
 }
@@ -116,6 +126,10 @@
         text-align: left;
 
         @include tablet {
+            font-size: 12px;
+        }
+        
+        @include mobile {
             font-size: 12px;
         }
     }
@@ -226,6 +240,10 @@
         text-align: left;
 
         @include tablet {
+            font-size: 12px;
+        }
+
+        @include mobile {
             font-size: 12px;
         }
     }

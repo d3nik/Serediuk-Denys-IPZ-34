@@ -1,4 +1,12 @@
 .occupation {
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
     .container {
         text-align: center;
         padding-bottom: 94px;

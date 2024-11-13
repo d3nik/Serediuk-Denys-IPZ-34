@@ -9,8 +9,61 @@
         padding-bottom: 60px;
         display: flex;
         gap: 94px;
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+        }
     }
 
+    .footer-left-side {    
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+    
+    .footer-logo {
+        @include tablet {   
+            width: 134px;
+            height: 28px;
+        }
+
+        @include mobile {  
+            width: 134px;
+            height: 28px;
+        }
+    }
+
+    .footer-contacts {
+        margin-top: 28px;
+        font-style: normal;
+
+        ul li:not(:last-child){
+            margin-bottom: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $general-white-color;
+            opacity: 60%;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                color: $general-blue-color;
+            }
+        }
+    }
     .contacts-city-address {
         display: block;
         margin-bottom: 12px;
@@ -25,13 +78,21 @@
             line-height: 1.17;
             font-weight: 700;
             letter-spacing: 0.03em;
-            text-transform: uppercase;
+            text-transform: uppercase;   
+
+            @include tablet {
+                text-align: center;
+            }
+
+            @include mobile {
+                text-align: center;
+            }
         }
     }
     .footer-social-link-list {
         display: flex;
         gap: 10px;
-    
+
         li {
             height: 44px;
             width: 44px;
@@ -66,16 +127,43 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
         }
+
+        @include tablet {
+            text-align: center;
+            justify-content: center;
+        }
+
+        @include mobile {
+            text-align: center;
+        }
     }
     .footer-email-form {
         display: flex;
+        flex-grow: 1;
         width: 100%;
         gap: 12px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .email-form-label {
-        max-width: 358px;
-        flex-grow: 1;
+        width: 358px;
     
+        @include tablet {
+            width: 450px;
+        }
+
+        @include mobile {
+            width: 99%;
+        }
+
         .is-hidden {
             position: absolute;
             visibility: hidden;
@@ -115,26 +203,5 @@
     }
     .email-form-button-icon {
         fill: currentColor;
-    }
-}
-
-.footer-contacts {
-    margin-top: 28px;
-    font-style: normal;
-
-    ul li:not(:last-child){
-        margin-bottom: 12px;
-    }
-
-    a {
-        text-decoration: none;
-        color: $general-white-color;
-        opacity: 60%;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: $general-blue-color;
-        }
     }
 }

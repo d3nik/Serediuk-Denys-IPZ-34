@@ -3,9 +3,30 @@
     .container {
     padding-top: 94px;
     padding-bottom: 94px;
-        ul {  
+    
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+        ul {
             display: flex;
             gap: 30px;
+
+            @include tablet {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @include mobile {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     }
     
@@ -14,6 +35,10 @@
         font-weight: 700;
         line-height: 1.17;
         margin-bottom: 10px;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     p {
@@ -22,6 +47,10 @@
         font-weight: 400;
         line-height: 1.71;
         color: $described-text-color;
+
+        @include mobile {
+            max-width: fit-content;
+        }
     }
 
     .features-icon{
@@ -29,5 +58,14 @@
         margin-bottom: 30px;
         border-radius: 4px;
         background: $block-color;
+
+        @include tablet {
+            padding: auto;
+        }
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
+        }
     }
 }

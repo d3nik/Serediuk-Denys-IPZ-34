@@ -1,6 +1,16 @@
 .projects{
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @include tablet {    
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include mobile {    
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 .projects-filters {
     display: flex;
@@ -8,12 +18,20 @@
     gap: 8px;
     margin-bottom: 50px;
 
+    @include mobile {
+        justify-content: start;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        margin-bottom: 40px;
+    }
+
     button {
         cursor: pointer;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.62;
+        letter-spacing: 0.03em;
         border: none;
         border-radius: 4px;
         padding: 6px 22px 6px 22px;
@@ -35,6 +53,16 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    @include mobile {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .card{
         max-width: 370px;
         text-align: start;
@@ -44,6 +72,14 @@
         background-color: $general-white-color;
         padding-bottom: 20px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+            max-width: 354px;
+        }
+
+        @include mobile {
+            max-width: 450px;   
+        }
 
         figcaption{
             padding-left: 24px;

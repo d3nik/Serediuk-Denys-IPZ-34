@@ -95,16 +95,16 @@
           <section class="projects">
             <div class="container">
               <ul class="projects-filters">
-                  <li><button type="button">Усі</button></li>
-                  <li><button type="button">Веб-сайти</button></li>
-                  <li><button type="button">Додатки</button></li>
-                  <li><button type="button">Дизайн</button></li>
-                  <li><button type="button">Маркетинг</button></li>
+                  <li><button class="filter-active" type="button" data-filter data-name="all">Усі</button></li>
+                  <li><button type="button" data-filter data-name="web-sites">Веб-сайти</button></li>
+                  <li><button type="button" data-filter data-name="applications">Додатки</button></li>
+                  <li><button type="button" data-filter data-name="design">Дизайн</button></li>
+                  <li><button type="button" data-filter data-name="marketing">Маркетинг</button></li>
               </ul>
               
 
               <ul class="projects-portfolio-list">
-                <li>
+                <li class="portfolio-list-item" data-name="web-sites">
                   <figure class="card">
                       <div class="card-box">
                         <img src="images/portfolio_1.jpg" alt="веб-сайт" width="370" height="294">
@@ -119,7 +119,7 @@
                     </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="design">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_2.jpg" alt="дизайн" width="370" height="294">
@@ -134,7 +134,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="applications">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_3.jpg" alt="додаток" width="370" height="294">
@@ -149,7 +149,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="marketing">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_4.jpg" alt="маркетинг" width="370" height="294">
@@ -164,7 +164,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="applications">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_5.jpg" alt="додаток" width="370" height="294">
@@ -179,7 +179,7 @@
                   </figure>
                 </li>
 
-                <li>
+                <li class="portfolio-list-item" data-name="web-sites">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_6.jpg" alt="веб-сайт" width="370" height="294">
@@ -194,7 +194,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="design">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_7.jpg" alt="дизайн" width="370" height="294">
@@ -209,7 +209,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="marketing">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_8.jpg" alt="маркетинг" width="370" height="294">
@@ -224,7 +224,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="portfolio-list-item" data-name="applications">
                   <figure class="card">
                     <div class="card-box">
                       <img src="images/portfolio_9.jpg" alt="додаток" width="370" height="294">
@@ -314,5 +314,6 @@
     </footer>
 
     <script src="./js/burger-menu.js"></script>
+    <script src="./js/filters.js"></script>
   </body>
 </html>

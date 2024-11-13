@@ -1156,6 +1156,9 @@ img {
     row-gap: 30px;
   }
 }
+.projects-portfolio-list .hidden {
+  display: none;
+}
 .projects-portfolio-list .card {
   max-width: 370px;
   text-align: start;
